@@ -10,4 +10,10 @@ Rails.application.routes.draw do
 
   post '/gifs', to: 'gifs#create'
 
+  get '/gifs/:id/edit', to: 'gifs#edit'
+
+  put '/gifs/:id', to: 'gifs#update'
+
+  delete '/gifs/:id', to: 'gifs#destroy'
+
 end

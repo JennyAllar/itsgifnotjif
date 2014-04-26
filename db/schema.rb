@@ -13,6 +13,8 @@
 
 ActiveRecord::Schema.define(version: 1) do
 
+  enable_extension 'plpgsql'
+
   create_table "gifs", force: true do |t|
     t.string "url"
     t.string "name"
