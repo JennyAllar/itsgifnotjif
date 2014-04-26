@@ -1,0 +1,36 @@
+<h1>Add a Gif!</h1>
+
+<form action="/gifs" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+
+  <p>
+    <label for="gif_url" class="form-label">Url</label>
+    <input name="gif[url]" id="gif_url" autofocus="autofocus">
+  </p>
+
+  <p>
+    <label for="gif_name" class="form-label">Name</label>
+    <input name="gif[name]" id="gif_name">
+  </p>
+
+  <p>
+    <label for="gif_keyword_1" class="form-label">Keyword 1</label>
+    <input name="gif[keyword_1]" id="gif_keyword_1" placeholder="something like 'Sassy!'">
+  </p>
+
+  <p>
+    <label for="gif_keyword_2" class="form-label">Keyword 1</label>
+    <input name="gif[keyword_2]" id="gif_keyword_2" placeholder="let me suggest 'Fierce!">
+  </p>
+
+  <p>
+    <label for="gif_keyword_3" class="form-label">Keyword 1</label>
+    <input name="gif[keyword_3]" id="gif_keyword_3" placeholder="define this motherfucker">
+  </p>
+
+  <p>
+    <input type="submit" value="Add My Gif" class="form-button">
+  </p>
+
+
+</form>

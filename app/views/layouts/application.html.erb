@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Itsgifnotjif</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>It's Gif, Not Jif</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+  <section class="intro" id="zen-intro">
+    <header role="banner">
+      <h1><a class="nav-link" href="/gifs/new">Add New Gif</a></h1>
+
+      <h2>It's gif, not jif, you asshole.</h2>
+    </header>
+    <%= yield %>
+    <div class="summary" id="zen-summary" role="article">
+      <p>Please add your amazing gif to the database!</p>
+    </div>
+
+    <div class="preamble" id="zen-preamble" role="article">
+      <h3>Father Gif is Wrong</h3>
+
+      <p>"Along with whether or not Al Gore invented the Internet, figuring out the correct pronunciation of GIF is one
+        of the earliest questions of the Internet. I grew up believing it was hard-G GIF. Most people I know pronounce
+        it like that too. Even the White House agreed on pronouncing GIF like 'gift'. But we have to re-evaluate the
+        whole argument again because the inventor of GIF—PAPA GIF Steve Wilhite—says its pronounced JIF. What. The.
+        Hell."</p>
+      <b>Casey Chan</b><br>
+      "The Creator of the GIF Says It's Pronounced JIF. He Is Wrong"<br>
+      <i>gizmodo.com</i>
+    </div>
+  </section>
+
+
+    <footer>
+      <a href="http://twitter.com/jennyallar" title="Jenny Allar's Twitter" class="zen-validate-html">find me on twitter</a>
+      <a href="http://jennydevelops.it" title="Jenny Allar's Blog" class="zen-validate-css">check out my blog here</a>
+      <a href="https://github.com/jennyallar" title="Jenny Allar's Github" class="zen-github">my github</a>
+      <a href="http://google.com" title="Link to Google" class="zen-license">the googs</a>
+      <a href="http://indeed.com" title="Find a job" class="zen-accessibility">find a job</a>
+    </footer>
+
+  </div>
+
+  <aside class="sidebar" role="complementary">
+    <div class="wrapper">
+
+      <div class="design-selection" id="design-selection">
+        <h3 class="select">Random Gif Here:</h3>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/220/" class="design-name">Gif 1</a> Name 1
+            </li>
+            <li>
+              <a href="/220/" class="design-name">Gif 2</a> Name 2
+            </li>
+            <li>
+              <a href="/220/" class="design-name">Gif 3</a> Name 3
+            </li>
+            <li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="zen-resources" id="zen-resources">
+        <h3 class="resources">Resources:</h3>
+        <ul>
+          <li class="view-css">
+            <a href="/" title="Gif Site">
+              Fucking amazing Gif site</a>
+          </li>
+          <li class="css-resources">
+            <a href="http://en.wikipedia.org/wiki/Graphics_Interchange_Format" title="gifs wiki">
+              Gifs Wikipedia </a>
+          </li>
+          <li class="zen-faq">
+            <a href="http://anotherlink.slkjdg" title="Another link">
+              Another Link Here</a>
+          </li>
+          <li class="zen-submit">
+            <a href="http:/anotherlsjkdf.com" title="And Another Here">
+              And Another One </a>
+          </li>
+          <li class="zen-translations">
+            <a href="http://lastlinkljksdg.com" title="Last Linkypoo">
+              Last Link Here </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+</div>
+
+<!--
+
+	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
+	These days we have full ::before and ::after support, favour using those instead.
+	These only remain for historical design compatibility. They might go away one day.
+
+-->
+
+<div class="extra2" role="presentation"></div>
+<div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div>
+<div class="extra5" role="presentation"></div>
+<div class="extra6" role="presentation"></div>
+<!--<div class="extra1" role="presentation"></div>-->
 
 </body>
 </html>
