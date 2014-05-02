@@ -14,47 +14,24 @@
       Seriously, stop calling it jif.<br>
     </p>
 
-    <p>
-      <a href="/gifs/new" class="pure-button pure-button-primary">Add a Gif</a>
-    </p>
+    <form class="pure-form">
+      <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Url">
+        <input type="text" class="pure-input-1-2" placeholder="Name this Gif">
+      </fieldset>
 
-    <form action="/gifs" method="post">
-      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+      <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Keyword 1 (ex: sassy)">
+        <input type="text" class="pure-input-1-2" placeholder="Keyword 2 (ex: facepalm)">
+        <input type="text" class="pure-input-1-2" placeholder="Keyword 3 (ex: STFU)">
+      </fieldset>
 
-      <p>
-        <label for="gif_url" class="form-label">Url</label>
-        <input name="gif[url]" id="gif_url" autofocus="autofocus">
-      </p>
-
-      <p>
-        <label for="gif_name" class="form-label">Name</label>
-        <input name="gif[name]" id="gif_name">
-      </p>
-
-      <p>
-        <label for="gif_keyword_1" class="form-label">Keyword 1</label>
-        <input name="gif[keyword_1]" id="gif_keyword_1" placeholder="something like 'Sassy!'">
-      </p>
-
-      <p>
-        <label for="gif_keyword_2" class="form-label">Keyword 1</label>
-        <input name="gif[keyword_2]" id="gif_keyword_2" placeholder="let me suggest 'Fierce!">
-      </p>
-
-      <p>
-        <label for="gif_keyword_3" class="form-label">Keyword 1</label>
-        <input name="gif[keyword_3]" id="gif_keyword_3" placeholder="define this motherfucker">
-      </p>
-
-      <p>
-        <input type="submit" value="Add My Gif" class="form-button">
-      </p>
-
-
+      <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Add Gif</button>
     </form>
 
   </div>
 </div>
 
-<h1>Add a Gif!</h1>
+
+
 

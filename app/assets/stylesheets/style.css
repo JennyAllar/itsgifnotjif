@@ -1,42 +1,3 @@
-/* css Zen Garden submission 217 - 'Screen Filler', by Elliot Jay Stocks, http://elliotjaystocks.com/  */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* TYPEKIT_KIT_ID: lxq7gid */
-
-/*
-================================================
-CSS Zen Garden theme for Typekit 01
-================================================
-Handcrafted by Elliot Jay Stocks
-http://elliotjaystocks.com/
-Last updated on 18.11.2013
-================================================
-01	Sensible Defaults
-02	Typography
-03	Layout
-04	Media Queries
-================================================
-*/
-
-/* ----------------------------------------------------------------------------------------------------------
-01 Sensible defaults ----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-/*#leftHalf {*/
-    /*background: url(earrings.gif);*/
-    /*width: 50%;*/
-    /*position: absolute;*/
-    /*left: 0px;*/
-    /*height: 100%;*/
-/*}*/
-/*#rightHalf {*/
-    /*background-color: black;*/
-    /*width: 50%;*/
-    /*position: absolute;*/
-    /*right: 0px;*/
-    /*height: 100%;*/
-/*}*/
-
 @media screen and (min-width: 35.5em) {
     .pure-u-sm-1,
     .pure-u-sm-1-1,
@@ -918,7 +879,7 @@ Last updated on 18.11.2013
  */
 body {
     line-height: 1.7em;
-    color: #7f8c8d;
+    color: black;
     font-size: 13px;
 }
 
