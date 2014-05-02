@@ -272,7 +272,7 @@ button {
  * Correct `select` style inheritance in Firefox.
  */
 
-button,
+
 select {
     text-transform: none;
 }
@@ -285,7 +285,6 @@ select {
  *    `input` and others.
  */
 
-button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {

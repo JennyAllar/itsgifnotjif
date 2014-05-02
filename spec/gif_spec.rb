@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'managing gifs' do
+feature 'managing welcome' do
   scenario 'user can add gif' do
     visit '/'
     click_on 'Add New Gif'

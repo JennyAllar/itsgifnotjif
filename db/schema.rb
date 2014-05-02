@@ -13,9 +13,10 @@
 
 ActiveRecord::Schema.define(version: 1) do
 
-  enable_extension 'plpgsql'
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
-  create_table "gifs", force: true do |t|
+  create_table "welcome", force: true do |t|
     t.string "url"
     t.string "name"
     t.string "keyword_1"
