@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/JennyAllar/itsgifnotjif.png)](https://codeclimate.com/github/JennyAllar/itsgifnotjif)
+
 # It's Gif, Not Jif
 
 ## Setup Instructions
