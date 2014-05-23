@@ -1,5 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/JennyAllar/itsgifnotjif.png)](https://codeclimate.com/github/JennyAllar/itsgifnotjif)
-
+[![Build Status](https://travis-ci.org/JennyAllar/itsgifnotjif.svg?branch=master)](https://travis-ci.org/JennyAllar/itsgifnotjif)
 # It's Gif, Not Jif
 
 ## Setup Instructions
