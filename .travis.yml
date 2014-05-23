@@ -1,22 +1,5 @@
 language: ruby
 rvm:
-- 2.1.1
-before_script:
-- cp config/database.yml.travis config/database.yml
-- bundle exec rake db:create
-- bundle exec rake db:migrate
+  - 2.1.1
 script:
-- bundle exec rake spec
-branches:
-  only:
-  - master
-deploy:
-  provider: heroku
-  api_key:
-    secure: FQjFP7nZrMZ7BUwAgDvErCarPSzdE13v8oUMPGLMkkr1MWALwjWnPZjC/9WrmzTOpJMOi/Qfi167YSPVHDELpwusmpzvjaYGL9LAI2rk9gUJ79E7tN/yjVKyzy1oybl5N02GIzrZN4xIILGNPyUkDZEz+UQJ5TtiPKk6/DEHhN0=
-  app: still-beach-9461
-  on:
-    repo: JennyAllar/itsgifnotjif
-  run:
-  - bundle exec rake db:migrate
-
+  - RAILS_ENV=test bundle exec rake --trace db:create db:migrate
