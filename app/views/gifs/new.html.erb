@@ -1,12 +1,3 @@
-<h1>Add a picture</h1>
-<% if @gif.errors.present? %>
-  <ul>
-    <% @gif.errors.messages.each do |message| %>
-      <li class="error_message"><%= message[1][0] %></li>
-    <% end %>
-  </ul>
-<% end %>
-
 <div class="splash-container">
   <div class="splash">
     <img src="http://i.imgur.com/hbq70S0.png"/></a>
@@ -16,14 +7,14 @@
 
     <form class="pure-form">
       <fieldset class="pure-group">
-        <input type="text" class="pure-input-1-2" placeholder="Url">
-        <input type="text" class="pure-input-1-2" placeholder="Name this Gif">
+        <input type="text" name="gif_url" class="pure-input-1-2" placeholder="Url" autofocus="autofocus">
+        <input type="text" name="gif_name" class="pure-input-1-2" placeholder="Name this Gif">
       </fieldset>
 
       <fieldset class="pure-group">
-        <input type="text" class="pure-input-1-2" placeholder="Keyword 1 (ex: sassy)">
-        <input type="text" class="pure-input-1-2" placeholder="Keyword 2 (ex: facepalm)">
-        <input type="text" class="pure-input-1-2" placeholder="Keyword 3 (ex: STFU)">
+        <input type="text" name="gif_keyword_1" class="pure-input-1-2" placeholder="Keyword 1 (ex: sassy)">
+        <input type="text" name="gif_keyword_2" class="pure-input-1-2" placeholder="Keyword 2 (ex: facepalm)">
+        <input type="text" name="gif_keyword_3" class="pure-input-1-2" placeholder="Keyword 3 (ex: STFU)">
       </fieldset>
 
       <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Add Gif</button>
@@ -31,6 +22,25 @@
 
   </div>
 </div>
+
+<div class="content-wrapper">
+  <div class="content">
+
+    <div class="pure-g">
+      <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+
+        <h3 class="content-subhead">
+        </h3>
+        <p>
+          <% @gifs.each do |gif| %>
+            <%= gif.name %>
+          <% end %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 

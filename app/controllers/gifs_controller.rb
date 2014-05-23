@@ -5,47 +5,13 @@ class GifsController < ApplicationController
   end
 
   def new
+    @gifs = Gif.all
     @gif = Gif.new
   end
 
-  #def create
-  #  @gif = Gif.new(allowed_parameters)
-  #  if @picture.save
-  #    redirect_to picture_path(@picture), :flash => {:success => "Picture successfully created"}
-  #  else
-  #    @picture
-  #    render new_picture_path
-  #  end
-  #end
-  #
-  #def show
-  #  @picture = Picture.find(params[:id])
-  #end
-  #
-  #def edit
-  #  @picture = Picture.find(params[:id])
-  #end
-  #
-  #def update
-  #  @picture = Picture.update(params[:id], allowed_parameters)
-  #  if @picture.valid?
-  #    redirect_to picture_path
-  #  else
-  #    @picture
-  #    render :edit
-  #  end
-  #end
-  #
-  #def destroy
-  #  @picture = Picture.find_by_id params[:id]
-  #  @picture.delete
-  #  redirect_to pictures_path, :flash => {:success => "Picture successfully deleted"}
-  #end
-  #
-  #private
-  #
-  #def allowed_parameters
-  #  params.permit(:id, :url, :description, :rating)
-  #end
+  def create
+    Gif.create(gif_name: params[:gif][:gif_url, :gif_name, :keyword_1, :keyword_2, :keyword_3])
+    redirect_to root_path
+  end
 
 end
