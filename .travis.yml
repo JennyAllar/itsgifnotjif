@@ -15,4 +15,4 @@ deploy:
   on:
     repo: JennyAllar/itsgifnotjif
   run:
-  - bundle exec rake db:migrate
+    - "bundle exec rake db:migrate"
