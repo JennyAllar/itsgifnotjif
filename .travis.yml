@@ -13,9 +13,10 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: qvLV7ZLIO8cUJ643aneNf+9jc2jp28JturItrMHaQSGrWG6T57VJznjvhZFQHJP5hxUtvDZQRv6mCwaDGxRcIUaQG2oMmbU/dz0bdCXu+oZqQiOOCVuj4YqAx1snOzgEzfw5rU57fICDWSgzaChX7/jLevJjXf/NMhfSH6JxlEI=
+    secure: FQjFP7nZrMZ7BUwAgDvErCarPSzdE13v8oUMPGLMkkr1MWALwjWnPZjC/9WrmzTOpJMOi/Qfi167YSPVHDELpwusmpzvjaYGL9LAI2rk9gUJ79E7tN/yjVKyzy1oybl5N02GIzrZN4xIILGNPyUkDZEz+UQJ5TtiPKk6/DEHhN0=
   app: still-beach-9461
   on:
     repo: JennyAllar/itsgifnotjif
   run:
-    - "bundle exec rake db:migrate"
+  - bundle exec rake db:migrate
+
