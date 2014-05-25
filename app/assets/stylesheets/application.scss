@@ -3,129 +3,141 @@
  *= require_self
 
  Available Fonts - Google Fonts
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'News Cycle', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Amatic SC', cursive;
  */
-
-
 @import url("reset.css");
 
 body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color:#333
+  font-family: 'News Cycle', 'Josefin Sans', 'Anton', sans-serif;
+  font-size: 13px;
+  color: #333
 }
 
 p {
-    padding: 10px;
+  padding: 10px;
 }
 
 #wrapper {
-    margin: 0 auto;
-    width: 1000px;
+  margin: 0 auto;
+  width: 1000px;
 }
 
 #headerwrap {
-    width: 1000px;
-    float: left;
-    margin: 0 auto;
+  width: 1000px;
+  float: left;
+  margin: 0 auto;
 }
 
 #header {
-    height: 150px;
-    width: 100%;
-    background: #FCA22D;
-    border-radius: 10px;
-    border: 1px solid #e88e19;
-    margin: 5px;
-    background-image:url("http://i.imgur.com/hbq70S0.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 150px;
+  width: 100%;
+  background: #FCA22D;
+  border-radius: 10px;
+  border: 1px solid #e88e19;
+  margin: 5px;
+  background-image: url("http://i.imgur.com/hbq70S0.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 #contentwrap {
-    width: 825px;
-    float: left;
-    margin: 0 auto;
+  width: 825px;
+  float: left;
+  margin: 0 auto;
 }
 
 #content {
-    background: #AAB352;
-    border-radius: 10px;
-    border: 1px solid #969f3e;
-    margin: 5px;
+  background: #FFDA33;
+  border-radius: 10px;
+  border: 1px solid #969f3e;
+  margin: 5px;
 }
 
 #leftcolumnwrap {
-    width: 175px;
-    float: left;
-    margin: 0 auto;
+  width: 175px;
+  float: left;
+  margin: 0 auto;
 }
 
 #leftcolumn {
-    background: #A80057;
-    border-radius: 10px;
-    border: 1px solid #940043;
-    margin: 5px;
+  background: #A80057;
+  border-radius: 10px;
+  border: 1px solid #940043;
+  margin: 5px;
 }
 
 #footerwrap {
-    width: 1000px;
-    float: left;
-    margin: inherit;
-    clear: both;
+  width: 1000px;
+  float: left;
+  margin: inherit;
+  clear: both;
 }
 
 #footer {
-    height: 40px;
-    background: #000000;
-    border-radius: 10px;
-    border: 1px solid #000000;
-    margin: 5px;
+  height: 40px;
+  background: #000000;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  margin: 5px;
 }
 
 #button {
-    width: 12em;
-    padding: 0 0 1em 0;
-    margin-bottom: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;
-    color: #333;
+  width: 5em;
+  padding: 0 0 1em 0;
+  margin-bottom: 1em;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 #button ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    padding-top: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-top: 20px;
 
 }
 
 #button li {
-    margin: 0;
-    list-style: none;
-    list-style-image: none;
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
 }
 
 #button li a {
-    display: block;
-    padding: 5px 5px 5px 0.5em;
-    border-left: 10px solid #00AD9C;
-    background-color: #A80057;
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
+  display: block;
+  padding: 5px 5px 5px 0.5em;
+  border-left: 10px solid #00AD9C;
+  background-color: #A80057;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
 }
 
-html>body #button li a {
-    width: auto;
+html > body #button li a {
+  width: auto;
 }
 
 #button li a:hover {
-    border-left: 10px solid #ffffff;
-    background-color: #A80057;
-    color: #000000;
+  border-left: 10px solid #ffffff;
+  background-color: #A80057;
+  color: #000000;
 }
+
+.button-2 {
+  padding: 5px 5px 5px 0.5em;
+  background-color: #00AD9C;  
+  width: 20%;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
