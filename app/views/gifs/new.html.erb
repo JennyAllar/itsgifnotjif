@@ -1,45 +1,27 @@
-<div class="splash-container">
-  <div class="splash">
-    <img src="http://i.imgur.com/hbq70S0.png"/></a>
-    <p class="splash-subhead">
-      Seriously, stop calling it jif.<br>
-    </p>
+<h2>Upload a Gif!</h2>
 
-    <form class="pure-form">
-      <fieldset class="pure-group">
-        <input type="text" name="gif_url" class="pure-input-1-2" placeholder="Url" autofocus="autofocus">
-        <input type="text" name="gif_name" class="pure-input-1-2" placeholder="Name this Gif">
-      </fieldset>
+<%= form_for @gif do |f| %>
+  <div class="full_column">
+    <fieldset>
+      <p><%= f.label :url, 'Gif Url', class: 'field_style' %>
+        <%= f.text_field :url, class: 'text_box_style', autofocus: 'autofocus' %></p>
 
-      <fieldset class="pure-group">
-        <input type="text" name="gif_keyword_1" class="pure-input-1-2" placeholder="Keyword 1 (ex: sassy)">
-        <input type="text" name="gif_keyword_2" class="pure-input-1-2" placeholder="Keyword 2 (ex: facepalm)">
-        <input type="text" name="gif_keyword_3" class="pure-input-1-2" placeholder="Keyword 3 (ex: STFU)">
-      </fieldset>
+      <p><%= f.label :name, 'Gif Name', class: 'field_style' %>
+        <%= f.text_field :name, class: 'text_box_style' %></p>
 
-      <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Add Gif</button>
-    </form>
+      <p><%= f.label :keyword_1, 'Keyword 1', class: 'field_style' %>
+        <%= f.text_field :keyword_1, class: 'text_box_style' %></p>
 
+      <p><%= f.label :keyword_2, 'Keyword 2', class: 'field_style' %>
+        <%= f.text_field :keyword_2, class: 'text_box_style' %></p>
+
+      <p><%= f.label :keyword_3, 'Keyword 3', class: 'field_style' %>
+        <%= f.text_field :keyword_3, class: 'text_box_style' %></p>
+
+          <%= f.submit 'Submit', class: 'submit_button', style: 'font-size: 14px;' %>
+    </fieldset>
   </div>
-</div>
-
-<div class="content-wrapper">
-  <div class="content">
-
-    <div class="pure-g">
-      <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
-
-        <h3 class="content-subhead">
-        </h3>
-        <p>
-          <% @gifs.each do |gif| %>
-            <%= gif.name %>
-          <% end %>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+<% end %>
 
 
 
