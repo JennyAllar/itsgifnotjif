@@ -1,6 +1,6 @@
 <% if @user %>
   Welcome, <%= @user.first_name %>!
-  <%= button_to 'Sign Out', logout_path, action: :delete, method: "get", class: "submit_button" %>
+  <%= button_to 'Sign Out', logout_path, action: :delete, method: "get", class: "pure-button pure-button-primary" %>
 <% else %>
-  <%= link_to 'Sign In', login_path %>&nbsp;&nbsp;|&nbsp;&nbsp;<%= link_to 'Register Here!', new_user_path %>
+  <%= button_to 'Sign In', login_path, method: "get", class: "pure-button pure-button-primary" %><%= button_to 'Register Here!', new_user_path, method: "get", class: "pure-button pure-button-primary" %>
 <% end %>

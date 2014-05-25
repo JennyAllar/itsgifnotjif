@@ -1,67 +1,56 @@
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/base-min.css">
+
 
 <!DOCTYPE html>
 <html>
 <head>
   <title>It's Gif, Not Jif</title>
-  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="../css/731438.css" />
 </head>
-
-<div class="header">
-
-  <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-    <a class="pure-menu-heading" href=""></a></a>
-
-    <ul>
-      <li class="pure-menu-selected"><a href="#">Home</a></li>
-      <li><a href="#">Tour</a></li>
-      <li><a href="#">Sign Up</a></li>
-    </ul>
+<body>
+<div id="wrapper">
+  <div id="headerwrap">
+    <div id="header">
+    </div>
   </div>
-</div>
-
-<div class="splash-container">
-  <div class="splash">
-    <img src="http://i.imgur.com/heRGUgB.gif"></a>
-    <img src="http://i.imgur.com/hbq70S0.png"/></a>
-    <p class="splash-subhead">
-      Seriously, stop calling it jif.<br>
-    </p>
-
-    <p>
+  <div id="leftcolumnwrap">
+    <div id="leftcolumn">
+      <div id="button">
+        <ul>
+          <li><a href="#">Search Gifs</a></li>
+          <li><a href="#">Jif? No.</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Recent Upload:</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="contentwrap">
+    <div id="content">
       <%= yield %>
-    </p>
+    </div>
+  </div>
+  <div id="footerwrap">
+    <div id="footer">
+      <a href="https://twitter.com/JennyAllar" class="twitter-follow-button" data-show-count="false" data-size="large">Follow
+        @JennyAllar</a>
+        <script>!function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        }(document, 'script', 'twitter-wjs');</script></p>
+    </div>
   </div>
 </div>
-
-<div class="footer l-box is-center">
-  <a href="https://twitter.com/JennyAllar" class="twitter-follow-button" data-show-count="false" data-size="large">Follow
-    @JennyAllar</a>
-  <script>!function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-    if (!d.getElementById(id)) {
-      js = d.createElement(s);
-      js.id = id;
-      js.src = p + '://platform.twitter.com/widgets.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }
-  }(document, 'script', 'twitter-wjs');</script>
-</div>
-
-<script src="http://yui.yahooapis.com/3.14.1/build/yui/yui.js"></script>
-<script>
-  YUI().use('node-base', 'node-event-delegate', function (Y) {
-    // This just makes sure that the href="#" attached to the <a> elements
-    // don't scroll you back up the page.
-    Y.one('body').delegate('click', function (e) {
-      e.preventDefault();
-    }, 'a[href="#"]');
-  });
-</script>
-
+</body>
+</html>
 
 
 
