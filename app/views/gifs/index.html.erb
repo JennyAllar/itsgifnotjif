@@ -1,6 +1,7 @@
 <%= link_to 'Add a Gif!', new_gif_path %>
 
 <ul><% @gifs.each do |gif| %>
-    <li><b><%= gif.name %></b>
+    <b><%= image_tag gif.url %></b><br>
+    <%= gif.name %>
   <% end %>
 </ul>
