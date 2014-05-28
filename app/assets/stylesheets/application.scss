@@ -6,27 +6,23 @@
 
 */
 
-
-
 /* ----- =structure ----- */
 
-
 body {
-  background-color:#000;
+  background-color: #ECD078;
 
 }
-
 
 #header_container,
 #content_container,
 #footer_container {
   margin: auto;
-  width: 960px;
+  width: 1250px;
 }
 
 #nav_container {
   margin: auto;
-  width: 960px;
+  width: 1250px;
   float: left;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -51,20 +47,17 @@ nav {
   background-color: #ECD078;
 }
 
-
 footer {
   background-color: #53777A;
 }
 
-
-
 /* ----- =columns ----- */
 
 #columns {
-  column-width: 320px;
+  column-width: 300px;
   column-gap: 15px;
   width: 90%;
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 50px auto;
 }
 
@@ -74,66 +67,66 @@ div#columns figure {
   border: 2px solid #fcfcfc;
   box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
   margin: 0 2px 15px;
-  padding: 15px; padding-bottom: 10px;
+  padding: 15px;
+  padding-bottom: 10px;
   transition: opacity .4s ease-in-out;
   column-break-inside: avoid;
   display: inline-block;
 }
+
 div#columns figure img {
-  width: 100%; height: auto;
+  width: 100%;
+  height: auto;
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
 
-div#columns:hover figure:not(:hover) { 
-  opacity: 0.4; 
+div#columns:hover figure:not(:hover) {
+  opacity: 0.4;
 }
 
 .one_half {
-  width:460px;
+  width: 460px;
 }
 
 .one_third {
-  width:300px;
+  width: 300px;
 }
 
 .two_third {
-  width:620px;
+  width: 620px;
 }
 
 .one_fourth {
-  width:220px;
+  width: 220px;
 }
 
 .three_fourth {
-  width:700px;
+  width: 700px;
 }
 
 .full_column {
-  width:940px;
+  width: 940px;
 }
 
 .one_half, .one_third, .two_third, .three_fourth, .one_fourth, .full_column {
-  position:relative;
-  margin-left:10px;
-  margin-right:10px;
-  margin-bottom:20px;
-  float:left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  float: left;
 }
 
 .resetColumnSet {
-  clear:both;
+  clear: both;
 }
-
-
 
 /* ----- =menu (Primary Nav) ----- */
 
-
 #menu {
   float: left; /* or float: left */
-  margin: 0 30px 0 21%;
+  margin: 0 30px 0 8%;
 }
 
 #menu li {
@@ -154,8 +147,18 @@ div#columns:hover figure:not(:hover) {
   background-color: #53777A;
 }
 
+#search_bar {
+  float: right;
+  color: #D95B43;
+}
+
+#search_bar li {
+  float: right;
+  list-style: none;
+}
+
 /*Borders between each button */
-#menu li+li {
+#menu li + li {
   border-left: 1px solid #000;
 }
 

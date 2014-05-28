@@ -40,11 +40,13 @@
       <li><a href="#">RANDOM</a></li>
       <li><a href=new_gif_path>ADD A GIF</a></li>
     </ul>
-
+<ul id="search_bar">
     <%= form_tag("/search", method: "get") do %>
-      <%= text_field_tag(:q) %>
-      <%= submit_tag("Search") %>
-    <% end %>
+    <li><%= image_submit_tag("icon_search.png", height: '30')  %></li>
+    <li><%= text_field_tag(:q, 'Search Gifs') %></li>
+
+<% end %>
+  </ul>
   </div><!--end navigation-->
 </nav>
 
