@@ -1,6 +1,6 @@
 fieldset {
     width: 100%;
-    border-width: 0;
+    border: 0 none;
 }
 
 .field_style {

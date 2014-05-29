@@ -13,7 +13,10 @@ body {
 
 }
 
-#header_container,
+#header_container {
+  margin-right: 5%;
+  width: 1250px;
+}
 #content_container,
 #footer_container {
   margin: auto;
@@ -34,8 +37,8 @@ header {
 
 header img {
   height: 200px;
-  margin-left: 25%;
-  padding: 20px 0 20px 0
+  padding: 20px 0 20px 0;
+  margin-left: 38%;
 }
 
 nav {
@@ -157,6 +160,32 @@ div#columns:hover figure:not(:hover) {
   list-style: none;
 }
 
+#menu_footer {
+  float: left; /* or float: left */
+  margin: 0 30px 0 8%;
+}
+
+#menu_footer li {
+  float: left;
+  list-style: none;
+  font-family: 'Amatic SC', cursive;
+  font-size: 38px;
+  text-align: top;
+}
+
+#menu_footer li a {
+  font-size: 100%;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  
+}
+
+#menu_footer li a:hover {
+  color: #fff;
+  background-color: #53777A;
+}
+
 /*Borders between each button */
 #menu li + li {
   border-left: 1px solid #000;
@@ -182,6 +211,52 @@ div#columns:hover figure:not(:hover) {
   border-top-color: #1b435e;
   background: #1b435e;
 }
+
+button, .button, input[type=submit] {
+  float: right;
+  margin-right: 10px;
+  border: 0;
+  background: #5786c1;
+  font-family: 'Amatic SC' cursive;
+  color: white;
+  padding: 8px 14px;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block; /* needed for anchors */
+  position: relative;
+  box-shadow: 1px 0px #3a587f, 0px 1px #4171ae,
+  2px 1px #3a587f, 1px 2px #4171ae,
+  3px 2px #3a587f, 2px 3px #4171ae,
+  4px 3px #3a587f, 3px 4px #4171ae,
+  5px 4px #3a587f, 4px 5px #4171ae,
+  6px 5px #3a587f, 5px 6px #4171ae;
+  &:hover, &:focus,
+  &.hover, &.focus {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae,
+    2px 1px #3a587f, 1px 2px #4171ae,
+    3px 2px #3a587f, 2px 3px #4171ae,
+    4px 3px #3a587f, 3px 4px #4171ae;
+  }
+  &:active,
+  &.active {
+    transform: translate(4px, 4px);
+    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae,
+    2px 1px #3a587f, 1px 2px #4171ae;
+  }
+}
+
+.form_input {
+  font-family: 'Open Sans Condensed' sans-serif;
+  border: 0px
+}
+
+h2 {
+  font-family: 'Oswald' sans-serif;
+  font-weight: 400;
+  font-size: 18px
+}
+
 
 ///*Borders on both sides */
 //#menu li:first-child a {

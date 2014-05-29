@@ -1,9 +1,13 @@
 <%= link_to 'Add a Gif!', new_gif_path %>
 
+<div id="columns">
+  <figure>
+    <%= image_tag('pizza.gif') %>
+    <figcaption>Delicious, cheesy pizza.</figcaption>
+  </figure>
 
-<ul>
   <% @gifs.each do |gif| %>
-    <div class="gifs"><%= image_tag gif.url %></div><br>
+    <%= image_tag gif.url %>
     <%= gif.name %>
   <% end %>
-</ul>
+</div>

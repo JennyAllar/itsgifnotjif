@@ -7,10 +7,3 @@
     <%= button_to 'Add a Gif!', new_gif_path, method: "get", class: "button-2" %>
   <% end %>
 </header>
-
-<ul>
-  <% @gifs.each do |gif| %>
-    <div class="gifs"><%= image_tag gif.url %></div><br>
-    <%= gif.name %>
-  <% end %>
-</ul>

@@ -1,7 +1,7 @@
 <h2>Upload a Gif!</h2>
 
 <%= form_for @gif do |f| %>
-  <div class="full_column">
+  <div class="form_input">
     <fieldset>
       <p><%= f.label :url, 'Gif Url', class: 'field_style' %>
         <%= f.url_field :url, class: 'text_box_style', autofocus: 'autofocus' %></p>
