@@ -41,11 +41,12 @@
       <li><a href="/jif">JIF? NO.</a></li>
     </ul>
 <ul id="search_bar">
-    <%= form_tag("/search", method: "get") do %>
-    <li><%= image_submit_tag("icon_search.png", height: '30')  %></li>
-    <li><%= text_field_tag(:q, 'Search Gifs') %></li>
+  <%= form_tag gifs_path, :method => 'get' do %>
+      <%= text_field_tag :search %>
+      <%= image_submit_tag("icon_search.png", height: '30') %>
+    </p>
+  <% end %>
 
-<% end %>
   </ul>
   </div><!--end navigation-->
 </nav>

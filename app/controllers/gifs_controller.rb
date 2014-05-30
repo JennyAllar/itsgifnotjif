@@ -14,11 +14,19 @@ class GifsController < ApplicationController
   end
 
   def index
-    @gifs = Gif.all
+    if params[:search]
+      @gifs = Gif.search(params[:search])
+    else
+      @gifs = Gif.all
+    end
   end
 
   def show
     @gif = Gif.find(params[:id])
+  end
+
+  def search
+    @gifs = Gif.search params[:search]
   end
 
   private
@@ -26,4 +34,6 @@ class GifsController < ApplicationController
   def gif_params
     params.require(:gif).permit(:url, :name, :keyword_1, :keyword_2, :keyword_3)
   end
+
+
 end

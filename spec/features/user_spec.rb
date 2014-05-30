@@ -56,4 +56,20 @@ feature 'Gif functions' do
     
     expect(page).to have_content 'Caturday'
   end
+  
+  scenario 'a user can search gifs using the search box' do
+    visit '/'
+
+    click_on 'Add a Gif!'
+    fill_in 'Gif Url', with: 'https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif'
+    fill_in 'Gif Name', with: 'Caturday'
+    fill_in 'Keyword 1', with: 'cat'
+    fill_in 'Keyword 2', with: 'sink'
+    fill_in 'Keyword 3', with: 'water'
+    click_on 'Submit'
+    
+    fill_in 'search', with: 'Caturday'
+    
+    expect(page).to have_content 'Caturday'
+  end
 end
