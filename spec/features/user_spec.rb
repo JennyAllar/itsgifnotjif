@@ -34,6 +34,12 @@ feature 'User functions' do
     fill_in 'Password', with: 'bob'
     click_on 'Submit'
   end
+  
+  scenario 'user can see a page about the pronunciation' do
+    visit '/'
+    click_on 'JIF? NO.'
+    expect(page).to have_content 'Al Gore'
+  end
 end
 
 feature 'Gif functions' do

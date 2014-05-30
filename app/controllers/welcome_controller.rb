@@ -6,4 +6,8 @@ class WelcomeController < ApplicationController
       @user = User.find(session[:user_id])
     end
   end
+  
+  def about
+    
+  end
 end

@@ -90,7 +90,7 @@ div#columns:hover figure:not(:hover) {
 }
 
 .one_half {
-  width: 460px;
+  width: 550px;
 }
 
 .one_third {
@@ -254,7 +254,45 @@ button, .button, input[type=submit] {
 h2 {
   font-family: 'Oswald' sans-serif;
   font-weight: 400;
-  font-size: 18px
+  font-size: 30px
+}
+
+h3 {
+  font-family: 'Amatic SC' cursive;
+  font-weight: 400;
+  font-size: 30px
+}
+
+.about_image {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px 8%;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  column-break-inside: avoid;
+  display: inline-block;
+}
+
+.quote {
+  text-align: right;
+  font-family: 'Open Sans Condensed' sans-serif;
+  font-size: 20px;
+}
+
+.quote_reverse {
+  text-align: left;
+  font-family: 'Open Sans Condensed' sans-serif;
+  font-size: 20px;
+  margin-left: 8%
+
+}
+
+#about_image_right {
+  float: right;
+  margin-top: 10%;
+  margin-right: 6%
 }
 
 
