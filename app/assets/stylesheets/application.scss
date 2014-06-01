@@ -85,6 +85,10 @@ div#columns figure img {
   margin-bottom: 5px;
 }
 
+div#columns figure text {
+  max-width: 200px;
+}
+
 div#columns:hover figure:not(:hover) {
   opacity: 0.4;
 }
@@ -299,6 +303,13 @@ h3 {
   color: #53777A;
   text-decoration: none;
 }
+
+.heart_icon {
+  height: 30px;
+  width: 20px;
+  border-bottom: none;
+}
+
 
 
 
