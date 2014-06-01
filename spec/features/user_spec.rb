@@ -72,4 +72,18 @@ feature 'Gif functions' do
     
     expect(page).to have_content 'Caturday'
   end
+  
+  scenario 'a user can click on a gif and find out more information about it' do
+    visit '/'
+
+    click_on 'Add a Gif!'
+    fill_in 'Gif Url', with: 'https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif'
+    fill_in 'Gif Name', with: 'Caturday'
+    fill_in 'Keyword 1', with: 'cat'
+    fill_in 'Keyword 2', with: 'sink'
+    fill_in 'Keyword 3', with: 'water'
+    click_on 'Submit'
+
+    expect(page).to have_selector("img[src$='https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif']")
+  end
 end
