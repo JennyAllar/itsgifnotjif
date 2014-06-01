@@ -48,7 +48,7 @@ feature 'Gif functions' do
     
     click_on 'Add a Gif!'
     fill_in 'Gif Url', with: 'https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif'
-    fill_in 'Gif Name', with: 'Caturday'
+    fill_in 'Gif Description', with: 'Caturday'
     fill_in 'Keyword 1', with: 'cat'
     fill_in 'Keyword 2', with: 'sink'
     fill_in 'Keyword 3', with: 'water'
@@ -62,7 +62,7 @@ feature 'Gif functions' do
 
     click_on 'Add a Gif!'
     fill_in 'Gif Url', with: 'https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif'
-    fill_in 'Gif Name', with: 'Caturday'
+    fill_in 'Gif Description', with: 'Caturday'
     fill_in 'Keyword 1', with: 'cat'
     fill_in 'Keyword 2', with: 'sink'
     fill_in 'Keyword 3', with: 'water'
@@ -78,7 +78,7 @@ feature 'Gif functions' do
 
     click_on 'Add a Gif!'
     fill_in 'Gif Url', with: 'https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif'
-    fill_in 'Gif Name', with: 'Caturday'
+    fill_in 'Gif Description', with: 'Caturday'
     fill_in 'Keyword 1', with: 'cat'
     fill_in 'Keyword 2', with: 'sink'
     fill_in 'Keyword 3', with: 'water'
