@@ -34,11 +34,13 @@ class GifsController < ApplicationController
     if type == "favorite"
       user = User.find(session[:user_id])
       gif = Gif.find(params[:id])
+      gif_favorites = user.favorites
+      if gif_favorites.include?(gif)
+        "You've already favorited this!"
+      else
+        gif_favorites << gif
 
-      user.favorites << gif
-      
-      p gif
-      
+      end
       redirect_to :back, notice: 'You favorited #{gif.name}'
 
     elsif type == "unfavorite"
@@ -48,7 +50,7 @@ class GifsController < ApplicationController
     else
       "unable to favorite"
     end
-    
+
     @favorites = FavoriteGif.all
   end
 
