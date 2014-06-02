@@ -1,16 +1,27 @@
-<header><% if @user %>
+<div id="columns_2">
+  <% if @user %>
     Welcome, <%= @user.first_name %>!
     <%= button_to 'Sign Out', logout_path, action: :delete, method: "get", class: "button-2" %>
   <% else %>
-    <%= button_to 'Sign In', login_path, method: "get", class: "button-2" %>
-    <%= button_to 'Register Here!', new_user_path, method: "get", class: "button-2" %>
-    <%= button_to 'Add a Gif!', new_gif_path, method: "get", class: "button-2" %>
+    <%= button_to 'Sign In', login_path, method: "get" %>
+    <%= button_to 'Register Here!', new_user_path, method: "get" %>
+    <%= button_to 'Add a Gif!', new_gif_path, method: "get" %>
   <% end %>
-</header>
+  <br>
+  <br>
+</div>
+<div id="columns">
 
-<ul>
+
   <% @gifs.each do |gif| %>
-    <div class="gifs"><%= image_tag gif.url %></div><br>
-    <%= gif.name %>
+    <figure>
+      <%= link_to (image_tag gif.url), gif_path(gif) %>
+      <figcaption><%= gif.name %></figcaption>
+      <div class="heart_icon">
+        <%= link_to image_tag("heart.png"), favorite_gif_path(gif, type: "favorite"), method: :put %>
+      </div>
+
+    </figure>
   <% end %>
-</ul>
+
+</div>

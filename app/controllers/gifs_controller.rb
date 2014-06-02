@@ -53,6 +53,10 @@ class GifsController < ApplicationController
 
     @favorites = FavoriteGif.all
   end
+  
+  def random
+    @gif = Gif.all.sample
+  end
 
   private
 
