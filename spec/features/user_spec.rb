@@ -111,4 +111,5 @@ feature 'Gif functions' do
 
     expect(page).to have_selector("img[src$='https://media.giphy.com/media/2sbAFXxQgQtNe/giphy.gif']")
   end
+
 end

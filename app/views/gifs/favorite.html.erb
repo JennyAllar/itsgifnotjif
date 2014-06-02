@@ -1,0 +1,10 @@
+<h1>Gifs you've favorited:</h1>
+<% @favorites.each do |favorite| %>
+  <figure>
+    <%= link_to (image_tag gif.url), gif_path(gif) %>
+    <figcaption><%= gif.name %></figcaption><div class="heart_icon">
+    <%= link_to image_tag("heart.png"), favorite_gif_path(gif, type: "favorite"), method: :put %>
+  </div>
+
+  </figure>
+<% end %>

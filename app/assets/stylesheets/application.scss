@@ -155,8 +155,15 @@ div#columns:hover figure:not(:hover) {
 }
 
 #search_bar {
+  height: 20px;
+  position: relative;
+  bottom: 10px;
   float: right;
   color: #D95B43;
+}
+
+#search_bar ul image {
+  padding-bottom: 30px;
 }
 
 #search_bar li {

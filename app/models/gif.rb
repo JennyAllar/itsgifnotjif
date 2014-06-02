@@ -12,4 +12,11 @@ SQL
     ).all
     #find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
   end
+  
+  belongs_to :user
+  
+  #favorites
+  has_many :favorite_gifs
+  has_many :favorited_by, through: :favorite_gifs, source: :user
+
 end

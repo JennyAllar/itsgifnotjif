@@ -29,6 +29,24 @@ class GifsController < ApplicationController
     @gifs = Gif.search params[:search]
   end
 
+  def favorite
+    type = params[:type]
+    if type == "favorite"
+      user = User.find(session[:user_id])
+      gif = Gif.find(params[:id])
+
+      @favorites = user.favorites << gif
+      redirect_to :back, notice: 'You favorited #{gif.name}'
+
+    elsif type == "unfavorite"
+      #current_user.favorites.delete(@gif)
+      redirect_to :back, notice: 'Unfavorited #{gif.name}'
+
+    else
+      # Type missing, nothing happens
+    end
+  end
+
   private
 
   def gif_params
