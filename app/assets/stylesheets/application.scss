@@ -157,9 +157,9 @@ div#columns:hover figure:not(:hover) {
 
 #icon_text {
   font-family: 'Open Sans Condensed', sans-serif;
-  float: right;
+  float: left;
   padding-right: 10px;
-  padding-top: 8px;
+  padding-top: 13px;
 }
 
 .one_half {
@@ -378,18 +378,12 @@ h3 {
 .heart_icon {
   height: 30px;
   width: 20px;
-  float: right;
-  padding-right: 18%;
+  float: left;
+  padding-right: 5%;
   padding-top: 2%;
   
 }
 
-.text_icon {
-  height: 33px;
-  width: 33px;
-  border-bottom: none;
-  float: right
-}
 
 .figure_column_large {
   width: 100%;
@@ -416,6 +410,12 @@ h3 {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   padding-left: 22%;
+}
+
+#texting {
+  font-family: 'Open Sans Condensed' sans-serif;
+  float: right;
+  padding-bottom: 10px;
 }
 
 ///*Borders on both sides */

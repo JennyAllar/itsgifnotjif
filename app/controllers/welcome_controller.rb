@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
+    
     @gifs = Gif.all
     
     if session[:user_id]
