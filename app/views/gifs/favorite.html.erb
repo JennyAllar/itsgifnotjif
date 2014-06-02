@@ -1,16 +1,20 @@
 <h1>Gifs you've favorited:</h1>
+
+
+
 <div id="columns">
-
-
   <% @favorites.each do |gif| %>
     <figure>
       <%= link_to (image_tag Gif.find(gif[:gif_id]).url), gif_path(gif) %>
       <figcaption>
         <div id="gif_name"><%= Gif.find(gif[:gif_id]).name %>
           <br></div>
-        <div class="text_icon">
-          <%= link_to image_tag("texticon.png"), "/#{gif.id}/text", method: :post %></div>
-        <div id="icon_text">Text this Gif</div>
+
+        <%= form_tag "/#{gif.id}/text" do %>
+          <div id="texting_icon"><%= image_submit_tag("texticon.png", {:height => 30}) %></div>
+          <div class="texting"><%= text_field_tag "phone_number", "Text this Gif", maxlength: 10, size: 12 %></div>
+        <% end %>
+
         <div class="heart_icon">
           <%= link_to image_tag("heart broken.png"), favorite_gif_path(Gif.find(gif[:gif_id]), type: "unfavorite"), method: :put %></div>
         <div id="icon_text">Like this Gif</div>
@@ -20,6 +24,3 @@
   <% end %>
 
 </div>
-
-
-
