@@ -379,11 +379,10 @@ h3 {
   height: 30px;
   width: 20px;
   float: left;
-  padding-right: 5%;
-  padding-top: 2%;
-  
-}
+  padding-right: 2%;
+  padding-top: 5%;
 
+}
 
 .figure_column_large {
   width: 100%;
@@ -412,11 +411,19 @@ h3 {
   padding-left: 22%;
 }
 
-#texting {
+.texting {
   font-family: 'Open Sans Condensed' sans-serif;
   float: right;
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
+
+#texting_icon {
+  float: right;
+  margin-top: 8px;
+  padding-left: 5px;
+}
+
+
 
 ///*Borders on both sides */
 //#menu li:first-child a {

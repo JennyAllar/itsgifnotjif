@@ -20,8 +20,9 @@
           <br></div>
 
         <%= form_tag "/#{gif.id}/text" do %>
-          <div id="texting"><%= text_field_tag "phone_number", "Text this Gif", maxlength: 10, size: 12 %>
-          <%= image_submit_tag("texticon.png", {:height => 30}) %></div>
+          <div id="texting_icon"><%= image_submit_tag("texticon.png", {:height => 30}) %></div>
+          <div class="texting"><%= text_field_tag "phone_number", "Text this Gif", maxlength: 10, size: 12 %></div>
+
 
       <% end %>
 
