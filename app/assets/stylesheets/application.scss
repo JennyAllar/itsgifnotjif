@@ -358,23 +358,33 @@ h3 {
 }
 
 .quote {
+  width: 500px;
+  float: right;
   text-align: right;
   font-family: 'Open Sans Condensed' sans-serif;
   font-size: 20px;
+  padding-right: 5%;
 }
 
 .quote_reverse {
+  width: 500px;
   text-align: left;
   font-family: 'Open Sans Condensed' sans-serif;
   font-size: 20px;
-  margin-left: 8%
-
+  margin-left: 8%;
 }
 
-#about_image_right {
-  float: right;
-  margin-top: 10%;
-  margin-right: 6%
+.about_image_reverse {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
+  margin-top: 8%;
+  margin-left: 8%;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  column-break-inside: avoid;
+  display: inline-block;
 }
 
 .one_half a {
