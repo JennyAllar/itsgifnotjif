@@ -1,16 +1,9 @@
-<div class="actions">
-  <a href="/people/<%= @gif.id %>/edit">Edit</a>
+<div id="columns_3">
+<div id="show_title"><%= @gif.name %></div>
+  <figure><%= image_tag(@gif.url) %></figure></div>
+<div id="columns_3">
+  <div id="show_keyword_title">Keywords:<br></div>
+  <div id="show_keywords"><%= @gif.keyword_1 %><br>
+  <%= @gif.keyword_2 %><br>
+  <%= @gif.keyword_3 %></div>
 </div>
-
-<h1>GifsNotFuckingJifs</h1>
-
-<dl class="attributes">
-  <dt>Url for Gif</dt>
-  <dd><%= image_tag(@gif.url) %></dd>
-  <dt>Name</dt>
-  <dd><%= @gif.name %></dd>
-  <dt>Keywords</dt>
-  <dd><%= @gif.keyword_1 %></dd>
-  <dd><%= @gif.keyword_2 %></dd>
-  <dd><%= @gif.keyword_3 %></dd>
-</dl>

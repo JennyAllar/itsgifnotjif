@@ -35,10 +35,11 @@
 
     <ul id="menu">
       <li><a href="/">HOME</a></li>
-      <li><a href="/">CATEGORIES</a></li>
       <li><a href="/favorites"><%= image_tag("heart.png", height: '15', width: '10') %>&nbsp;&nbsp;&nbsp;&nbsp;LIKES</a></li>
       <li><a href="/random">RANDOM</a></li>
       <li><a href="/jif">JIF? NO.</a></li>
+      <li><a href="/">ABOUT ME</a></li>
+
     </ul>
 <ul id="search_bar">
   <%= form_tag gifs_path, :method => 'get' do %>

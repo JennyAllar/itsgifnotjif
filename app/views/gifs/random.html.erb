@@ -2,12 +2,16 @@
 
   <figure>
     <%= link_to (image_tag @gif.url), gif_path(@gif) %>
-    <figcaption><%= @gif.name %></figcaption>
-    <div class="heart_icon">
-      <%= link_to image_tag("heart.png"), favorite_gif_path(@gif, type: "favorite"), method: :put %>
+    <figcaption>
+      <div id="gif_name"><%= @gif.name %><br></div>
       <div class="text_icon">
-        <%= link_to image_tag("texticon.png"),  "/#{gif.id}/text", method: :post %>
+        <%= link_to image_tag("texticon.png"), "/#{@gif.id}/text", method: :post %>
       </div>
-    </div>
+      <div id="icon_text">Text this Gif</div>
+      <div class="heart_icon">
+        <%= link_to image_tag("heart.png"), favorite_gif_path(@gif, type: "favorite"), method: :put %>
+      </div>
+      <div id="icon_text">Like this Gif</div>
+    </figcaption>
   </figure>
 </div>

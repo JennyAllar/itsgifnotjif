@@ -13,10 +13,16 @@ body {
 
 }
 
+img {
+  padding: 0px;
+  margin: 0px;
+}
+
 #header_container {
   margin-right: 5%;
   width: 1250px;
 }
+
 #content_container,
 #footer_container {
   margin: auto;
@@ -72,6 +78,14 @@ footer {
   margin: 0 auto;
 }
 
+#columns_3 {
+  column-width: 300px;
+  column-gap: 15px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 div#columns figure {
   max-width: 240px;
   background: #fefefe;
@@ -93,12 +107,59 @@ div#columns figure img {
   margin-bottom: 5px;
 }
 
+div#columns figure .text_icon img {
+  width: 100%;
+  height: auto;
+  border-bottom: none;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+div#columns figure .heart_icon img {
+  width: 100%;
+  height: auto;
+  border-bottom: none;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+#gif_name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+div#columns_3 figure {
+  max-width: 400px;
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  column-break-inside: avoid;
+  display: inline-block;
+}
+
+div#columns_3 figure img {
+  width: 100%;
+  height: auto;
+}
+
 div#columns figure text {
   max-width: 200px;
 }
 
 div#columns:hover figure:not(:hover) {
   opacity: 0.4;
+}
+
+#icon_text {
+  font-family: 'Open Sans Condensed', sans-serif;
+  float: right;
+  padding-right: 10px;
+  padding-top: 8px;
 }
 
 .one_half {
@@ -197,7 +258,7 @@ div#columns:hover figure:not(:hover) {
   color: #fff;
   display: block;
   text-decoration: none;
-  
+
 }
 
 #menu_footer li a:hover {
@@ -243,25 +304,16 @@ button, .button, input[type=submit] {
   text-decoration: none;
   display: inline-block; /* needed for anchors */
   position: relative;
-  box-shadow: 1px 0px #3a587f, 0px 1px #4171ae,
-  2px 1px #3a587f, 1px 2px #4171ae,
-  3px 2px #3a587f, 2px 3px #4171ae,
-  4px 3px #3a587f, 3px 4px #4171ae,
-  5px 4px #3a587f, 4px 5px #4171ae,
-  6px 5px #3a587f, 5px 6px #4171ae;
+  box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae, 6px 5px #3a587f, 5px 6px #4171ae;
   &:hover, &:focus,
   &.hover, &.focus {
     transform: translate(2px, 2px);
-    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae,
-    2px 1px #3a587f, 1px 2px #4171ae,
-    3px 2px #3a587f, 2px 3px #4171ae,
-    4px 3px #3a587f, 3px 4px #4171ae;
+    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae;
   }
   &:active,
   &.active {
     transform: translate(4px, 4px);
-    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae,
-    2px 1px #3a587f, 1px 2px #4171ae;
+    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae;
   }
 }
 
@@ -326,17 +378,45 @@ h3 {
 .heart_icon {
   height: 30px;
   width: 20px;
-  border-bottom: none;
+  float: right;
+  padding-right: 18%;
+  padding-top: 2%;
+  
 }
 
 .text_icon {
-  height: 40px;
-  width: 40px;
+  height: 33px;
+  width: 33px;
   border-bottom: none;
+  float: right
 }
 
+.figure_column_large {
+  width: 100%;
+}
 
+.figure_column_small {
+  width: 8%
+}
 
+#show_title {
+  padding-top: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#show_keyword_title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#show_keywords {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  padding-left: 22%;
+}
 
 ///*Borders on both sides */
 //#menu li:first-child a {

@@ -24,7 +24,7 @@ class GifsController < ApplicationController
   end
 
   def show
-    @gif = Gif.find(gif_params[:id])
+    @gif = Gif.find(params[:id])
   end
 
   def search
