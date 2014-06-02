@@ -44,7 +44,7 @@ header {
 header img {
   height: 200px;
   padding: 20px 0 20px 0;
-  margin-left: 38%;
+  margin-left: 40%;
 }
 
 nav {
@@ -85,6 +85,13 @@ footer {
   max-width: 600px;
   margin: 0 auto;
 }
+
+#center_columns {
+  text-align: center
+}
+
+
+
 
 div#columns figure {
   max-width: 240px;
@@ -421,6 +428,12 @@ h3 {
   float: right;
   margin-top: 8px;
   padding-left: 5px;
+}
+
+.gifs_title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 

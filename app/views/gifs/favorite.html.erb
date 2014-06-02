@@ -1,8 +1,5 @@
-<h1>Gifs you've favorited:</h1>
-
-
-
 <div id="columns">
+  <div class="gifs_title">gifs you dig:</div><br>
   <% @favorites.each do |gif| %>
     <figure>
       <%= link_to (image_tag Gif.find(gif[:gif_id]).url), gif_path(gif) %>
@@ -17,7 +14,7 @@
 
         <div class="heart_icon">
           <%= link_to image_tag("heart broken.png"), favorite_gif_path(Gif.find(gif[:gif_id]), type: "unfavorite"), method: :put %></div>
-        <div id="icon_text">Like this Gif</div>
+        <div id="icon_text">Unlike this Gif</div>
 
       </figcaption>
     </figure>
