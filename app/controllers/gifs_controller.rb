@@ -1,3 +1,5 @@
+require 'twilio-ruby'
+
 class GifsController < ApplicationController
   def new
     @gif = Gif.new
@@ -53,9 +55,22 @@ class GifsController < ApplicationController
 
     @favorites = FavoriteGif.all
   end
-  
+
   def random
     @gif = Gif.all.sample
+  end
+
+  def text
+    gif = Gif.find(params[:id])
+    account_sid = 'AC0e913c3bd18a3c23bea75680b402ed0c'
+    auth_token = 'f3730f5d23bdeed5d6c4364ce66b23f4'
+    client = Twilio::REST::Client.new account_sid, auth_token
+    client.account.messages.create({
+                                     :from => '15867823484',
+                                     :to => '+15868830323',
+                                     :body => gif.url,
+                                   })
+    redirect_to '/'
   end
 
   private

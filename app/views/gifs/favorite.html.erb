@@ -9,6 +9,9 @@
       <div class="heart_icon">
         <%= link_to image_tag("heart broken.png"), favorite_gif_path(Gif.find(gif[:gif_id]), type: "unfavorite"), method: :put %>
       </div>
+      <div class="text_icon">
+        <%= link_to image_tag("texticon.png"),  "/#{gif.id}/text", method: :post %>
+      </div>
 
     </figure>
   <% end %>
