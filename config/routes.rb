@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   get '/favorites' => 'gifs#favorite'
   get '/random' => 'gifs#random'
   post '/:id/text' => 'gifs#text'
+  get '/about' => 'gifs#about'
 
 end
