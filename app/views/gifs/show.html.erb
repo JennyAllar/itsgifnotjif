@@ -1,9 +1,24 @@
 <div id="columns_3">
 <div id="show_title"><%= @gif.name %></div>
-  <figure><%= image_tag(@gif.url) %></figure></div>
+  <figure><%= image_tag(@gif.url) %>
+    <figcaption><%= form_tag "/#{@gif.id}/text" do %>
+      <div id="texting_icon"><%= image_submit_tag("texticon.png", {:height => 30}) %></div>
+      <div class="texting"><%= text_field_tag "phone_number", "Text this Gif", maxlength: 10, size: 12 %></div>
+    <% end %>
+    <div class="heart_icon">
+      <%= link_to image_tag("heart.png", {:height => 30}), favorite_gif_path(@gif, type: "favorite"), method: :put %></div>
+    <div id="icon_text">Like this Gif</div></figcaption></figure></div>
+
 <div id="columns_3">
-  <div id="show_keyword_title">Keywords:<br></div>
-  <div id="show_keywords"><%= @gif.keyword_1 %><br>
-  <%= @gif.keyword_2 %><br>
-  <%= @gif.keyword_3 %></div>
+  
+  <div id="show_keyword_title">Keywords:</div>
+  <div id="show_keywords">
+    <ul>
+    <li><%= @gif.keyword_1 %><br></li>
+  <li><%= @gif.keyword_2 %><br></li>
+  <li><%= @gif.keyword_3 %></li>
+    </ul>
+    
+    
+</div>
 </div>
