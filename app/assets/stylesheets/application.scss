@@ -470,6 +470,7 @@ h3 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 10%;
 }
 
 .reg_form input{
@@ -477,8 +478,12 @@ h3 {
   font-weight: lighter;
 }
 
-.reg_form submit{
-  font-family: 'Amatic SC', cursive;
+.reg_form h1{
+  padding-right: 8%;
+}
+
+.reg_form h2{
+  padding-right: 2%;
 }
 
 .terms_of_service {

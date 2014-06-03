@@ -1,8 +1,9 @@
-<h2>Create an Account!</h2>
 
 <%= form_for @user do |f| %>
   <div class="full_column">
     <div class="reg_form">
+      <h2>Create an Account!</h2>
+
       <p><%= f.label :first_name, 'First Name', class: 'field_style' %>
         <%= f.text_field :first_name, class: 'text_box_style', autofocus: 'autofocus' %></p>
 

@@ -1,8 +1,9 @@
-<h1>Log In</h1>
 
 <%= form_tag login_path do %>
   <div class="full_column">
-    <fieldset>
+    <div class="reg_form">
+      <h1>Log In</h1>
+
       <p>
         <%= label_tag :email, 'Email', class: 'field_style' %>
         <%= text_field_tag :email, params[:email], class: 'text_box_style', autofocus: 'autofocus' %>
@@ -16,6 +17,9 @@
       <div style="width: 71%; float:right">
         <%= submit_tag "Submit", class: 'submit_button' %>
       </div>
-    </fieldset>
+  </div>
   </div>
 <% end %>
+
+<div class="resetColumnSet">
+</div>
