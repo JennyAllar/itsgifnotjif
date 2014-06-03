@@ -458,8 +458,26 @@ h3 {
   font-weight: bold;
 }
 
+.reg_form {
+  text-align: right;
+  padding-right: 22%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 
+.reg_form input{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+}
 
+.reg_form submit{
+  font-family: 'Amatic SC', cursive;
+}
+
+.terms_of_service {
+  width: 733px;
+}
 ///*Borders on both sides */
 //#menu li:first-child a {
 //  border-left: 1px solid #000;
@@ -468,5 +486,12 @@ h3 {
 //  border-right: 1px solid #000;
 //}
 //
+
+
+
+
+
+
+
 
 

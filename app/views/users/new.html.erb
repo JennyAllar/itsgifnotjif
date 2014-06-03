@@ -2,7 +2,7 @@
 
 <%= form_for @user do |f| %>
   <div class="full_column">
-    <fieldset>
+    <div class="reg_form">
       <p><%= f.label :first_name, 'First Name', class: 'field_style' %>
         <%= f.text_field :first_name, class: 'text_box_style', autofocus: 'autofocus' %></p>
 
@@ -18,12 +18,15 @@
       <p><%= f.label :password_confirmation, 'Password Confirmation', class: 'field_style' %>
         <%= f.password_field :password_confirmation, class: 'text_box_style' %></p>
 
-      <div style="width: 82%; float:right; font-size: 12px;">
+      <div style="width: 82%; font-size: 12px;">
         <div class="terms_of_service"> I agree to <%= link_to 'Terms of Service', terms_path %>&nbsp;
-          <%= f.check_box :terms_of_service, id: 'terms' %>
+          <%= f.check_box :terms_of_service, id: 'terms' %><br><br><br>
           <%= f.submit 'Submit', class: 'submit_button', style: 'font-size: 14px;' %>
         </div>
       </div>
-    </fieldset>
+    </div>
   </div>
 <% end %>
+<div class="resetColumnSet"></div>
+
+
