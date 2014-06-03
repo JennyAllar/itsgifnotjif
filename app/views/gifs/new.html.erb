@@ -1,8 +1,8 @@
-<h2>Upload a Gif!</h2>
-
-<%= form_for @gif do |f| %>
-  <div class="form_input">
-    <fieldset>
+<div class="full_column">
+<div class="reg_form">
+  <h2>Upload a Gif!</h2>
+  <%= form_for @gif do |f| %>
+    <div class="form_input">
       <p><%= f.label :url, 'Gif Url', class: 'field_style' %>
         <%= f.url_field :url, class: 'text_box_style', autofocus: 'autofocus' %></p>
 
@@ -18,11 +18,13 @@
       <p><%= f.label :keyword_3, 'Keyword 3', class: 'field_style' %>
         <%= f.text_field :keyword_3, class: 'text_box_style' %></p>
 
-          <%= f.submit 'Submit', class: 'submit_button', style: 'font-size: 14px;' %>
-    </fieldset>
-  </div>
-<% end %>
-
+      <%= f.submit 'Submit', class: 'submit_button', style: 'font-size: 14px;' %>
+      </div>
+  <% end %>
+</div>
+</div>
+<div class="resetColumnSet">
+</div>
 
 
 
