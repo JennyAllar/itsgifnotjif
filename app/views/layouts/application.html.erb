@@ -56,24 +56,6 @@
 
     <div id="columns_2">
 
-      <div id="user-widget">
-
-        <% if current_user %>
-
-          Welcome <strong><%= current_user.name %></strong>!
-
-          <%= link_to "Sign out", signout_path, id: "sign_out" %>
-
-        <% else %>
-          <%= link_to("/auth/facebook",
-                      rel: 'tooltip', relative: true) do %>
-            <%= image_tag('login_with_facebook.png', width: '210', height: '40') %>
-          <% end %>
-
-        <% end %>
-
-      </div>
-
       <header><% if @user %>
           <%= button_to 'Add a Gif!', new_gif_path, method: "get", class: "button-2" %>
           <%= button_to 'Sign Out', logout_path, action: :delete, method: "get", class: "button-2" %>
