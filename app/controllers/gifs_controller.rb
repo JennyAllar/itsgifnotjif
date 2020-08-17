@@ -63,8 +63,8 @@ class GifsController < ApplicationController
   def text
     phone_number = params[:phone_number]
     gif = Gif.find(params[:id])
-    account_sid = 'AC0e913c3bd18a3c23bea75680b402ed0c'
-    auth_token = 'f3730f5d23bdeed5d6c4364ce66b23f4'
+    account_sid = ''
+    auth_token = ''
     client = Twilio::REST::Client.new account_sid, auth_token
     client.account.messages.create({
                                      :from => '15867823484',
