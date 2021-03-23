@@ -5,8 +5,7 @@
 ![Fun Gif](http://media.giphy.com/media/clU6FeI1aTMqI/giphy.gif)
 
 My first gSchool personal project was born out of a discussion about animated gifs and the pronunciation of the word.
-I found that anyone who has a hard, unwavering opinion regarding how the word is said is _probably_ a little bit of an
-asshole. This app is for lovers of gifs (whether they like to call them gifs or jifs) to use as a gif repository, search
+This app is for lovers of gifs (whether they like to call them gifs or jifs) to use as a gif repository, search
 engine, and texting platform.
 
 ## Setup Instructions
